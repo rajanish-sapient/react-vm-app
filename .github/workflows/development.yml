@@ -24,6 +24,8 @@ jobs:
           project_id: ${{secrets.GCP_PROJECT_ID}}
           service_account_key: ${{ secrets.GCP_SA_KEYBASE64 }}
           service_account_email: ${{secrets.GCP_SA_EMAIL}}
+        uses: 'google-github-actions/deploy-appengine@v0'
 
-      - id: 'deploy'
-      uses: 'google-github-actions/deploy-appengine@v0'
+
+
+
