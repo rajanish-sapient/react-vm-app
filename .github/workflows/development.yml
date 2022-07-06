@@ -27,9 +27,10 @@ jobs:
       - name: Deploye
         uses: 'google-github-actions/deploy-appengine@v0'
         with:
-          deliverables: 'app.yaml'
-          promote: false
-          version: 'v1   
+          project_id: '${{secrets.GCP_PROJECT_ID}}'
+          service_account_key: '${{ secrets.GCP_SA_KEYBASE64 }}'
+      - name: 'Deploy to App Engine'
+        run: 'gcloud app deploy app.yaml --quiet --no-promote --version v1'  
 
 
 
