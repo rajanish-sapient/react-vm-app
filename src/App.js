@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Colgate Health React demo</h1>
+      <h1>Colgate Health React demo using Github Action</h1>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
        
