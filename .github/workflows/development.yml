@@ -19,8 +19,9 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
       - name: Deploy to gcloud 
-        uses: akhileshns/heroku-deploy@v3.12.12
+        uses: google-github-actions/setup-gcloud@main
         with:
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: 'burner-rajmahar'
-          heroku_email: 'zafarsaleem3@gmail.com'
+          project_id: ${{secrets.GCP_PROJECT_ID}}
+          service_account_key: ${{ secrets.GCP_SA_KEYBASE64 }}
+          service_account_email: ${{secrets.GCP_SA_EMAIL}}
+
