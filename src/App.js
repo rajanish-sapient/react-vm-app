@@ -1,6 +1,7 @@
-import './App.css';
-import Orders from './orders/Orders';
-import Home from './Home/Home';
+import "./App.css";
+import Orders from "./orders/Orders";
+import Home from "./Home/Home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -8,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="orders" element={<Orders />} />
-        <Route path="invoices" element={<Invoices />} />
       </Routes>
     </div>
   );
