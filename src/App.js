@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Orders from './orders/Orders';
+import Home from './Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Colgate Health React demo using Github Action</h1>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-       
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="orders" element={<Orders />} />
+        <Route path="invoices" element={<Invoices />} />
+      </Routes>
     </div>
   );
 }
