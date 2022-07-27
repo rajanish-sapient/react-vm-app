@@ -1,7 +1,8 @@
+runtime: nodejs16
 
 handlers:
 - url: /
-  static_files: pca-skin/build/index.html
+  static_files: build/index.html
   upload: build/index.html
   expiration: 1s
   
