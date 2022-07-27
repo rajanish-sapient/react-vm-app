@@ -1,4 +1,10 @@
 "use strict";
+import {
+  ChevronDown_default,
+  SocialFacebook_default,
+  SocialInstagram_default,
+  SocialLinkedIn_default
+} from "./chunk-6VNX4VDR.mjs";
 
 // src/components/Button/Button.tsx
 import * as React from "react";
@@ -123,71 +129,7 @@ var Header = ({ imgUrl, navMenuItems }) => {
 Header.displayName = "Header";
 
 // src/components/Footer/Footer.tsx
-import * as React8 from "react";
-
-// src/icons/SocialFacebook.tsx
 import * as React5 from "react";
-var SvgSocialFacebook = ({
-  title,
-  titleId,
-  ...props
-}) => /* @__PURE__ */ React5.createElement("svg", {
-  viewBox: "0 0 24 24",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg",
-  "aria-labelledby": titleId,
-  ...props
-}, title ? /* @__PURE__ */ React5.createElement("title", {
-  id: titleId
-}, title) : null, /* @__PURE__ */ React5.createElement("path", {
-  d: "M9.5 8.667H7V12h2.5v10h4.167V12h3L17 8.667h-3.333V7.25c0-.75.166-1.083.916-1.083H17V2h-3.167c-3 0-4.333 1.333-4.333 3.833v2.834Z",
-  fill: "currentColor"
-}));
-var SocialFacebook_default = SvgSocialFacebook;
-
-// src/icons/SocialInstagram.tsx
-import * as React6 from "react";
-var SvgSocialInstagram = ({
-  title,
-  titleId,
-  ...props
-}) => /* @__PURE__ */ React6.createElement("svg", {
-  viewBox: "0 0 24 24",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg",
-  "aria-labelledby": titleId,
-  ...props
-}, title ? /* @__PURE__ */ React6.createElement("title", {
-  id: titleId
-}, title) : null, /* @__PURE__ */ React6.createElement("path", {
-  fillRule: "evenodd",
-  clipRule: "evenodd",
-  d: "M7 3a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4H7ZM1 7a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6H7a6 6 0 0 1-6-6V7Zm11.483 1.989a3 3 0 1 0-.88 5.935 3 3 0 0 0 .88-5.935ZM9.74 7.519a5 5 0 1 1 4.606 8.876A5 5 0 0 1 9.74 7.518ZM17.5 5.5a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01Z",
-  fill: "currentColor"
-}));
-var SocialInstagram_default = SvgSocialInstagram;
-
-// src/icons/SocialLinkedIn.tsx
-import * as React7 from "react";
-var SvgSocialLinkedIn = ({
-  title,
-  titleId,
-  ...props
-}) => /* @__PURE__ */ React7.createElement("svg", {
-  viewBox: "0 0 24 24",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg",
-  "aria-labelledby": titleId,
-  ...props
-}, title ? /* @__PURE__ */ React7.createElement("title", {
-  id: titleId
-}, title) : null, /* @__PURE__ */ React7.createElement("path", {
-  d: "M6.375 4.174a2.16 2.16 0 0 1-2.188 2.174A2.16 2.16 0 0 1 2 4.174 2.16 2.16 0 0 1 4.188 2a2.16 2.16 0 0 1 2.187 2.174Zm0 3.913H2V22h4.375V8.087Zm7 0H9V22h4.375v-7.304c0-4.087 5.25-4.435 5.25 0V22H23v-8.783c0-6.87-7.787-6.608-9.625-3.217V8.087Z",
-  fill: "currentColor"
-}));
-var SocialLinkedIn_default = SvgSocialLinkedIn;
-
-// src/components/Footer/Footer.tsx
 var Footer = ({ footerCols, footerLogoUrl }) => {
   const totalCols = footerCols.length;
   const getFooterLinks = (col) => {
@@ -206,45 +148,45 @@ var Footer = ({ footerCols, footerLogoUrl }) => {
   } else {
     gridClass = "grid-cols-1 grid lg:grid-cols-4 gap-4";
   }
-  return /* @__PURE__ */ React8.createElement("footer", {
+  return /* @__PURE__ */ React5.createElement("footer", {
     id: "site-footer",
     className: "relative bg-black",
     role: "footer"
-  }, /* @__PURE__ */ React8.createElement("div", {
+  }, /* @__PURE__ */ React5.createElement("div", {
     className: "footer-inner container py-5 text-center text-white lg:py-12 lg:text-left"
-  }, /* @__PURE__ */ React8.createElement("div", {
+  }, /* @__PURE__ */ React5.createElement("div", {
     className: `${gridClass}`
-  }, linksData.map((linkCol, index) => /* @__PURE__ */ React8.createElement(FooterLinkColumn, {
+  }, linksData.map((linkCol, index) => /* @__PURE__ */ React5.createElement(FooterLinkColumn, {
     key: index,
     linkColumnData: linkCol
-  })), /* @__PURE__ */ React8.createElement(FooterSocialColumn, {
+  })), /* @__PURE__ */ React5.createElement(FooterSocialColumn, {
     socialColumnData: socialData
-  })), /* @__PURE__ */ React8.createElement("div", {
+  })), /* @__PURE__ */ React5.createElement("div", {
     className: "mt-16 flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start lg:text-left"
-  }, /* @__PURE__ */ React8.createElement("div", {
+  }, /* @__PURE__ */ React5.createElement("div", {
     className: "logo mr-0 mb-6 lg:mb-0 lg:mr-14"
-  }, /* @__PURE__ */ React8.createElement("img", {
+  }, /* @__PURE__ */ React5.createElement("img", {
     src: footerLogoUrl,
     className: "w-52",
     alt: "footer logo"
-  })), /* @__PURE__ */ React8.createElement("p", {
+  })), /* @__PURE__ */ React5.createElement("p", {
     className: "text-[12px]"
   }, "\xA9 2022 CP Skin Health. All Rights Reserved.", " "))));
 };
 Footer.displayName = "Footer";
 var FooterLinkColumn = ({ linkColumnData }) => {
   var _a;
-  return /* @__PURE__ */ React8.createElement("div", {
+  return /* @__PURE__ */ React5.createElement("div", {
     className: "mb-3 lg:mb-0"
-  }, /* @__PURE__ */ React8.createElement("ul", null, /* @__PURE__ */ React8.createElement("li", {
+  }, /* @__PURE__ */ React5.createElement("ul", null, /* @__PURE__ */ React5.createElement("li", {
     className: "block"
-  }, /* @__PURE__ */ React8.createElement("span", {
+  }, /* @__PURE__ */ React5.createElement("span", {
     className: "block py-2 font-bold lg:py-3"
   }, linkColumnData.title)), (_a = linkColumnData.links) == null ? void 0 : _a.map((link) => {
-    return /* @__PURE__ */ React8.createElement("li", {
+    return /* @__PURE__ */ React5.createElement("li", {
       key: link.label,
       className: `block ${link.emphasize ? "font-bold" : ""}`
-    }, /* @__PURE__ */ React8.createElement("a", {
+    }, /* @__PURE__ */ React5.createElement("a", {
       className: "block py-2 lg:py-3",
       href: link.path,
       title: link.label,
@@ -254,63 +196,63 @@ var FooterLinkColumn = ({ linkColumnData }) => {
 };
 var FooterSocialColumn = ({ socialColumnData }) => {
   var _a;
-  return /* @__PURE__ */ React8.createElement("div", {
+  return /* @__PURE__ */ React5.createElement("div", {
     className: "mt-4 lg:mt-0"
-  }, /* @__PURE__ */ React8.createElement("ul", {
+  }, /* @__PURE__ */ React5.createElement("ul", {
     className: "social_group flex justify-center py-2 lg:justify-start lg:py-3"
   }, socialColumnData.social_handles.map((handle, index) => {
-    return /* @__PURE__ */ React8.createElement("li", {
+    return /* @__PURE__ */ React5.createElement("li", {
       key: index,
       className: "mx-6 basis-0 lg:mx-0 lg:basis-20"
-    }, /* @__PURE__ */ React8.createElement("a", {
+    }, /* @__PURE__ */ React5.createElement("a", {
       href: handle.url,
       title: handle.name,
       target: "_blank",
       rel: "noreferrer"
-    }, handle.name === "facebook" ? /* @__PURE__ */ React8.createElement(SocialFacebook_default, {
+    }, handle.name === "facebook" ? /* @__PURE__ */ React5.createElement(SocialFacebook_default, {
       className: "h-6 w-6"
-    }) : handle.name === "instagram" ? /* @__PURE__ */ React8.createElement(SocialInstagram_default, {
+    }) : handle.name === "instagram" ? /* @__PURE__ */ React5.createElement(SocialInstagram_default, {
       className: "h-6 w-6"
-    }) : handle.name === "linkedin" ? /* @__PURE__ */ React8.createElement(SocialLinkedIn_default, {
+    }) : handle.name === "linkedin" ? /* @__PURE__ */ React5.createElement(SocialLinkedIn_default, {
       className: "h-6 w-6"
     }) : null));
-  })), /* @__PURE__ */ React8.createElement("div", {
+  })), /* @__PURE__ */ React5.createElement("div", {
     className: "help mt-12"
-  }, /* @__PURE__ */ React8.createElement("a", {
+  }, /* @__PURE__ */ React5.createElement("a", {
     href: "/",
     className: "font-bold"
-  }, "Need Help?"), /* @__PURE__ */ React8.createElement("p", {
+  }, "Need Help?"), /* @__PURE__ */ React5.createElement("p", {
     className: "contact mt-4"
-  }, "Call ", /* @__PURE__ */ React8.createElement("span", null, socialColumnData.contact))), /* @__PURE__ */ React8.createElement("div", {
+  }, "Call ", /* @__PURE__ */ React5.createElement("span", null, socialColumnData.contact))), /* @__PURE__ */ React5.createElement("div", {
     className: "mt-6"
   }, (_a = socialColumnData.office_schedule) == null ? void 0 : _a.map((schedule, index) => {
-    return /* @__PURE__ */ React8.createElement("p", {
+    return /* @__PURE__ */ React5.createElement("p", {
       key: index
-    }, /* @__PURE__ */ React8.createElement("span", {
+    }, /* @__PURE__ */ React5.createElement("span", {
       className: "font-bold"
-    }, schedule.day), ":", /* @__PURE__ */ React8.createElement("span", null, " ", schedule.time));
+    }, schedule.day), ":", /* @__PURE__ */ React5.createElement("span", null, " ", schedule.time));
   })));
 };
 
 // src/components/AppLayout/AppLayout.tsx
-import * as React9 from "react";
+import * as React6 from "react";
 function AppLayout({ header, footer, content }) {
-  return /* @__PURE__ */ React9.createElement("div", {
+  return /* @__PURE__ */ React6.createElement("div", {
     className: "flex flex-col bg-gray-100"
-  }, /* @__PURE__ */ React9.createElement("div", {
+  }, /* @__PURE__ */ React6.createElement("div", {
     className: "sticky top-0 z-10"
-  }, header), /* @__PURE__ */ React9.createElement("div", {
+  }, header), /* @__PURE__ */ React6.createElement("div", {
     className: "container py-5 lg:py-12"
-  }, content), /* @__PURE__ */ React9.createElement("div", {
+  }, content), /* @__PURE__ */ React6.createElement("div", {
     className: "w-full"
   }, footer));
 }
 AppLayout.displayName = "AppLayout";
 
 // src/components/Card/Card.tsx
-import React10 from "react";
+import React7 from "react";
 var Card = ({ children }) => {
-  return /* @__PURE__ */ React10.createElement("div", {
+  return /* @__PURE__ */ React7.createElement("div", {
     className: "rounded-br-[48px] bg-white p-12 text-left"
   }, children);
 };
@@ -318,9 +260,9 @@ Card.displayName = "Card";
 var Card_default = Card;
 
 // src/components/Card/CardHeader.tsx
-import React11 from "react";
+import React8 from "react";
 var CardHeader = ({ children }) => {
-  return /* @__PURE__ */ React11.createElement("h1", {
+  return /* @__PURE__ */ React8.createElement("h1", {
     className: "text-brand-primary mb-10 text-4xl font-black leading-10"
   }, children);
 };
@@ -328,7 +270,7 @@ CardHeader.displayName = "CardHeader";
 var CardHeader_default = CardHeader;
 
 // src/components/TextField/TextField.tsx
-import React12 from "react";
+import React9 from "react";
 var TextField = ({
   type = "text",
   required = false,
@@ -339,10 +281,10 @@ var TextField = ({
   label,
   htmlFor
 }) => {
-  return /* @__PURE__ */ React12.createElement(React12.Fragment, null, /* @__PURE__ */ React12.createElement("label", {
+  return /* @__PURE__ */ React9.createElement(React9.Fragment, null, /* @__PURE__ */ React9.createElement("label", {
     htmlFor,
     className: !label ? `sr-only` : `mb-3 block text-xs  font-normal text-neutral-600`
-  }, label ? label : null), /* @__PURE__ */ React12.createElement("input", {
+  }, label ? label : null), /* @__PURE__ */ React9.createElement("input", {
     type,
     placeholder,
     name,
@@ -356,37 +298,37 @@ var TextField = ({
 TextField.displayName = "TextField";
 
 // src/components/FormField/FormField.tsx
-import React13 from "react";
+import React10 from "react";
 var FormField = ({ className = "", children }) => {
-  return /* @__PURE__ */ React13.createElement("div", {
+  return /* @__PURE__ */ React10.createElement("div", {
     className
   }, children);
 };
 FormField.displayName = "FormField";
 
 // src/components/AppProtectedLayout/AppProtectedLayout.tsx
-import * as React14 from "react";
+import * as React11 from "react";
 function AppProtectedLayout({
   sideMenu,
   content
 }) {
-  return /* @__PURE__ */ React14.createElement("div", {
+  return /* @__PURE__ */ React11.createElement("div", {
     className: "my-12 flex flex-col	items-start gap-8 lg:flex-row"
-  }, /* @__PURE__ */ React14.createElement("aside", {
+  }, /* @__PURE__ */ React11.createElement("aside", {
     className: "w-full lg:w-1/5"
-  }, sideMenu), /* @__PURE__ */ React14.createElement("main", {
+  }, sideMenu), /* @__PURE__ */ React11.createElement("main", {
     className: "w-full lg:w-4/5"
   }, content));
 }
 AppProtectedLayout.displayName = "AppProtectedLayout";
 
 // src/components/SideMenu/SideMenu.tsx
-import * as React16 from "react";
+import * as React13 from "react";
 
 // src/components/SideMenuItem/SideMenuItem.tsx
-import * as React15 from "react";
+import * as React12 from "react";
 var SideMenuItem = ({ item, render }) => {
-  return /* @__PURE__ */ React15.createElement("li", {
+  return /* @__PURE__ */ React12.createElement("li", {
     className: "mb-3 text-sm font-bold"
   }, render(item));
 };
@@ -399,18 +341,18 @@ function SideMenu({
   heading,
   subHeading
 }) {
-  return /* @__PURE__ */ React16.createElement("div", {
+  return /* @__PURE__ */ React13.createElement("div", {
     className: "flex flex-col py-7"
-  }, /* @__PURE__ */ React16.createElement("div", {
+  }, /* @__PURE__ */ React13.createElement("div", {
     className: "flex flex-col"
-  }, /* @__PURE__ */ React16.createElement("h1", {
+  }, /* @__PURE__ */ React13.createElement("h1", {
     className: "text-4xl font-bold"
-  }, heading), /* @__PURE__ */ React16.createElement("p", {
+  }, heading), /* @__PURE__ */ React13.createElement("p", {
     className: "mt-2 font-light"
-  }, subHeading)), /* @__PURE__ */ React16.createElement("ul", {
+  }, subHeading)), /* @__PURE__ */ React13.createElement("ul", {
     className: "mt-6"
   }, items.map((item, index) => {
-    return /* @__PURE__ */ React16.createElement(SideMenuItem, {
+    return /* @__PURE__ */ React13.createElement(SideMenuItem, {
       key: index,
       item,
       render
@@ -420,29 +362,8 @@ function SideMenu({
 SideMenu.displayName = "SideMenu";
 
 // src/components/Table/OrderTable/OrderTable.tsx
-import React18, { useState as useState2, useMemo } from "react";
+import React14, { useState as useState2, useMemo } from "react";
 import { useTable, useSortBy, usePagination } from "react-table";
-
-// src/icons/ChevronDown.tsx
-import * as React17 from "react";
-var SvgChevronDown = ({
-  title,
-  titleId,
-  ...props
-}) => /* @__PURE__ */ React17.createElement("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  viewBox: "0 0 20 20",
-  fill: "currentColor",
-  "aria-labelledby": titleId,
-  ...props
-}, title ? /* @__PURE__ */ React17.createElement("title", {
-  id: titleId
-}, title) : null, /* @__PURE__ */ React17.createElement("path", {
-  d: "M5.293 7.293a1 1 0 0 1 1.414 0L10 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414z"
-}));
-var ChevronDown_default = SvgChevronDown;
-
-// src/components/Table/OrderTable/OrderTable.tsx
 var OrderTable = ({
   columnsList,
   data,
@@ -497,74 +418,74 @@ var OrderTable = ({
     });
     return date;
   };
-  return /* @__PURE__ */ React18.createElement("div", {
+  return /* @__PURE__ */ React14.createElement("div", {
     className: "bg-white p-8 px-0 text-left lg:p-8"
-  }, /* @__PURE__ */ React18.createElement("h2", {
+  }, /* @__PURE__ */ React14.createElement("h2", {
     className: "border-brand-primary border-b pb-2 text-xl font-bold"
-  }, title), /* @__PURE__ */ React18.createElement("p", {
+  }, title), /* @__PURE__ */ React14.createElement("p", {
     className: "mt-3 mb-5 text-base font-light"
-  }, description), /* @__PURE__ */ React18.createElement("div", {
+  }, description), /* @__PURE__ */ React14.createElement("div", {
     className: "overflow-auto"
-  }, /* @__PURE__ */ React18.createElement("table", {
+  }, /* @__PURE__ */ React14.createElement("table", {
     className: "w-[1000px] text-left lg:w-full",
     ...getTableProps()
-  }, /* @__PURE__ */ React18.createElement("thead", {
+  }, /* @__PURE__ */ React14.createElement("thead", {
     className: "border-brand-accent-gray-light border-b-2"
-  }, headerGroups.map((headerGroup) => /* @__PURE__ */ React18.createElement("tr", {
+  }, headerGroups.map((headerGroup) => /* @__PURE__ */ React14.createElement("tr", {
     ...headerGroup.getHeaderGroupProps()
-  }, headerGroup.headers.map((column) => /* @__PURE__ */ React18.createElement("th", {
+  }, headerGroup.headers.map((column) => /* @__PURE__ */ React14.createElement("th", {
     className: "header pb-2 text-base",
     ...column.getHeaderProps(column.getSortByToggleProps())
-  }, /* @__PURE__ */ React18.createElement("div", {
+  }, /* @__PURE__ */ React14.createElement("div", {
     className: "flex items-center"
-  }, /* @__PURE__ */ React18.createElement("span", {
+  }, /* @__PURE__ */ React14.createElement("span", {
     className: "mr-1"
-  }, column.render("Header")), column.isSorted ? column.isSortedDesc ? /* @__PURE__ */ React18.createElement(ChevronDown_default, {
+  }, column.render("Header")), column.isSorted ? column.isSortedDesc ? /* @__PURE__ */ React14.createElement(ChevronDown_default, {
     className: "h-5 w-5"
-  }) : /* @__PURE__ */ React18.createElement(ChevronDown_default, {
+  }) : /* @__PURE__ */ React14.createElement(ChevronDown_default, {
     className: "h-5 w-5 rotate-180"
-  }) : null)))))), /* @__PURE__ */ React18.createElement("tbody", {
+  }) : null)))))), /* @__PURE__ */ React14.createElement("tbody", {
     ...getTableBodyProps()
   }, page.map((row) => {
     prepareRow(row);
-    return /* @__PURE__ */ React18.createElement("tr", {
+    return /* @__PURE__ */ React14.createElement("tr", {
       className: "border-brand-accent-gray-light  border-b",
       ...row.getRowProps()
     }, row.cells.map((cell) => {
       const isDateField = cell.column.Header === "Date";
-      return /* @__PURE__ */ React18.createElement("td", {
+      return /* @__PURE__ */ React14.createElement("td", {
         className: "py-4 font-light",
         ...cell.getCellProps()
       }, isDateField ? showOrderDate(cell.value) : cell.render("Cell"));
     }));
-  })))), /* @__PURE__ */ React18.createElement("div", {
+  })))), /* @__PURE__ */ React14.createElement("div", {
     className: "mt-12 flex justify-center"
-  }, /* @__PURE__ */ React18.createElement("ul", {
+  }, /* @__PURE__ */ React14.createElement("ul", {
     className: "flex items-end"
-  }, /* @__PURE__ */ React18.createElement("li", {
+  }, /* @__PURE__ */ React14.createElement("li", {
     className: "mr-2 text-sm"
-  }, /* @__PURE__ */ React18.createElement(Button, {
+  }, /* @__PURE__ */ React14.createElement(Button, {
     type: "button",
     variant: "primary",
     size: "sm",
     disabled: !canPreviousPage,
     onClick: () => onPageChange(currentPage - 1)
   }, "Prev")), pages.map((page2) => {
-    return /* @__PURE__ */ React18.createElement("li", {
+    return /* @__PURE__ */ React14.createElement("li", {
       key: page2,
       className: `
                 ${page2 === currentPage ? "active bg-brand-primary text-white" : null}
                 border-brand-primary hover:bg-brand-primary mx-2 flex h-8 w-auto cursor-pointer items-center justify-center border py-2 px-3 text-sm transition duration-100 ease-in hover:text-white`,
       onClick: () => page2 !== currentPage && onPageChange(page2)
     }, page2);
-  }), totalPagesCount >= maxVisiblePages + 1 ? /* @__PURE__ */ React18.createElement(React18.Fragment, null, /* @__PURE__ */ React18.createElement("li", {
+  }), totalPagesCount >= maxVisiblePages + 1 ? /* @__PURE__ */ React14.createElement(React14.Fragment, null, /* @__PURE__ */ React14.createElement("li", {
     className: "mx-3"
-  }, "..."), /* @__PURE__ */ React18.createElement("li", {
+  }, "..."), /* @__PURE__ */ React14.createElement("li", {
     className: "border-brand-primary hover:bg-brand-primary mx-2 flex h-8 w-auto cursor-pointer items-center justify-center border py-2 px-3 text-sm transition duration-100 ease-in hover:text-white",
     onClick: () => totalPagesCount !== currentPage && onPageChange(totalPagesCount)
-  }, totalPagesCount)) : null, /* @__PURE__ */ React18.createElement("li", {
+  }, totalPagesCount)) : null, /* @__PURE__ */ React14.createElement("li", {
     className: "ml-2 text-sm"
-  }, /* @__PURE__ */ React18.createElement(Button, {
+  }, /* @__PURE__ */ React14.createElement(Button, {
     type: "button",
     variant: "primary",
     size: "sm",
@@ -575,7 +496,7 @@ var OrderTable = ({
 OrderTable.displayName = "OrderTable";
 
 // src/components/Table/InvoiceTable/InvoiceTable.tsx
-import React19, { useState as useState3, useMemo as useMemo2 } from "react";
+import React15, { useState as useState3, useMemo as useMemo2 } from "react";
 import { useTable as useTable2, useSortBy as useSortBy2, usePagination as usePagination2 } from "react-table";
 var InvoiceTable = ({
   columnsList,
@@ -631,74 +552,74 @@ var InvoiceTable = ({
     });
     return date;
   };
-  return /* @__PURE__ */ React19.createElement("div", {
+  return /* @__PURE__ */ React15.createElement("div", {
     className: "bg-white p-8 px-0 text-left lg:p-8"
-  }, /* @__PURE__ */ React19.createElement("h2", {
+  }, /* @__PURE__ */ React15.createElement("h2", {
     className: "border-brand-primary border-b pb-2 text-xl font-bold"
-  }, title), /* @__PURE__ */ React19.createElement("p", {
+  }, title), /* @__PURE__ */ React15.createElement("p", {
     className: "mt-3 mb-5 text-base font-light"
-  }, description), /* @__PURE__ */ React19.createElement("div", {
+  }, description), /* @__PURE__ */ React15.createElement("div", {
     className: "overflow-auto"
-  }, /* @__PURE__ */ React19.createElement("table", {
+  }, /* @__PURE__ */ React15.createElement("table", {
     className: "w-[1000px] text-left lg:w-full",
     ...getTableProps()
-  }, /* @__PURE__ */ React19.createElement("thead", {
+  }, /* @__PURE__ */ React15.createElement("thead", {
     className: "border-brand-accent-gray-light border-b-2"
-  }, headerGroups.map((headerGroup) => /* @__PURE__ */ React19.createElement("tr", {
+  }, headerGroups.map((headerGroup) => /* @__PURE__ */ React15.createElement("tr", {
     ...headerGroup.getHeaderGroupProps()
-  }, headerGroup.headers.map((column) => /* @__PURE__ */ React19.createElement("th", {
+  }, headerGroup.headers.map((column) => /* @__PURE__ */ React15.createElement("th", {
     className: "header pb-2 text-base",
     ...column.getHeaderProps(column.getSortByToggleProps())
-  }, /* @__PURE__ */ React19.createElement("div", {
+  }, /* @__PURE__ */ React15.createElement("div", {
     className: "flex items-center"
-  }, /* @__PURE__ */ React19.createElement("span", {
+  }, /* @__PURE__ */ React15.createElement("span", {
     className: "mr-1"
-  }, column.render("Header")), column.isSorted ? column.isSortedDesc ? /* @__PURE__ */ React19.createElement(ChevronDown_default, {
+  }, column.render("Header")), column.isSorted ? column.isSortedDesc ? /* @__PURE__ */ React15.createElement(ChevronDown_default, {
     className: "h-5 w-5"
-  }) : /* @__PURE__ */ React19.createElement(ChevronDown_default, {
+  }) : /* @__PURE__ */ React15.createElement(ChevronDown_default, {
     className: "h-5 w-5 rotate-180"
-  }) : null)))))), /* @__PURE__ */ React19.createElement("tbody", {
+  }) : null)))))), /* @__PURE__ */ React15.createElement("tbody", {
     ...getTableBodyProps()
   }, page.map((row) => {
     prepareRow(row);
-    return /* @__PURE__ */ React19.createElement("tr", {
+    return /* @__PURE__ */ React15.createElement("tr", {
       className: "border-brand-accent-gray-light  border-b",
       ...row.getRowProps()
     }, row.cells.map((cell) => {
       const isDateField = cell.column.Header === "Date";
-      return /* @__PURE__ */ React19.createElement("td", {
+      return /* @__PURE__ */ React15.createElement("td", {
         className: "py-4 font-light",
         ...cell.getCellProps()
       }, isDateField ? showInvoiceDate(cell.value) : cell.render("Cell"));
     }));
-  })))), /* @__PURE__ */ React19.createElement("div", {
+  })))), /* @__PURE__ */ React15.createElement("div", {
     className: "mt-12 flex justify-center"
-  }, /* @__PURE__ */ React19.createElement("ul", {
+  }, /* @__PURE__ */ React15.createElement("ul", {
     className: "flex items-end"
-  }, /* @__PURE__ */ React19.createElement("li", {
+  }, /* @__PURE__ */ React15.createElement("li", {
     className: "mr-2 text-sm"
-  }, /* @__PURE__ */ React19.createElement(Button, {
+  }, /* @__PURE__ */ React15.createElement(Button, {
     type: "button",
     variant: "primary",
     size: "sm",
     disabled: !canPreviousPage,
     onClick: () => onPageChange(currentPage - 1)
   }, "Prev")), pages.map((page2) => {
-    return /* @__PURE__ */ React19.createElement("li", {
+    return /* @__PURE__ */ React15.createElement("li", {
       key: page2,
       className: `
                 ${page2 === currentPage ? "active bg-brand-primary text-white" : null}
                 border-brand-primary hover:bg-brand-primary mx-2 flex h-8 w-auto cursor-pointer items-center justify-center border py-2 px-3 text-sm transition duration-100 ease-in hover:text-white`,
       onClick: () => page2 !== currentPage && onPageChange(page2)
     }, page2);
-  }), totalPagesCount >= maxVisiblePages + 1 ? /* @__PURE__ */ React19.createElement(React19.Fragment, null, /* @__PURE__ */ React19.createElement("li", {
+  }), totalPagesCount >= maxVisiblePages + 1 ? /* @__PURE__ */ React15.createElement(React15.Fragment, null, /* @__PURE__ */ React15.createElement("li", {
     className: "mx-3"
-  }, "..."), /* @__PURE__ */ React19.createElement("li", {
+  }, "..."), /* @__PURE__ */ React15.createElement("li", {
     className: "border-brand-primary hover:bg-brand-primary mx-2 flex h-8 w-auto cursor-pointer items-center justify-center border py-2 px-3 text-sm transition duration-100 ease-in hover:text-white",
     onClick: () => totalPagesCount !== currentPage && onPageChange(totalPagesCount)
-  }, totalPagesCount)) : null, /* @__PURE__ */ React19.createElement("li", {
+  }, totalPagesCount)) : null, /* @__PURE__ */ React15.createElement("li", {
     className: "ml-2 text-sm"
-  }, /* @__PURE__ */ React19.createElement(Button, {
+  }, /* @__PURE__ */ React15.createElement(Button, {
     type: "button",
     variant: "primary",
     size: "sm",
@@ -709,18 +630,18 @@ var InvoiceTable = ({
 InvoiceTable.displayName = "InvoiceTable";
 
 // src/components/Pages/Login.tsx
-import React20, { useState as useState4 } from "react";
+import React16, { useState as useState4 } from "react";
 var Login = () => {
   const [formData, setFormData] = useState4({ password: "", email: "" });
-  return /* @__PURE__ */ React20.createElement("div", {
+  return /* @__PURE__ */ React16.createElement("div", {
     className: "drop-shadow-xl"
-  }, /* @__PURE__ */ React20.createElement(Card_default, null, /* @__PURE__ */ React20.createElement("div", {
+  }, /* @__PURE__ */ React16.createElement(Card_default, null, /* @__PURE__ */ React16.createElement("div", {
     className: "divide-y"
-  }, /* @__PURE__ */ React20.createElement("div", {
+  }, /* @__PURE__ */ React16.createElement("div", {
     className: "mb-10"
-  }, /* @__PURE__ */ React20.createElement(CardHeader_default, null, "Sign In"), /* @__PURE__ */ React20.createElement(FormField, {
+  }, /* @__PURE__ */ React16.createElement(CardHeader_default, null, "Sign In"), /* @__PURE__ */ React16.createElement(FormField, {
     className: "mt-10"
-  }, /* @__PURE__ */ React20.createElement(TextField, {
+  }, /* @__PURE__ */ React16.createElement(TextField, {
     type: "email",
     htmlFor: "email",
     label: " Email*",
@@ -728,33 +649,33 @@ var Login = () => {
     value: formData.email,
     placeholder: "Email",
     name: "email"
-  })), /* @__PURE__ */ React20.createElement("label", {
+  })), /* @__PURE__ */ React16.createElement("label", {
     htmlFor: "password",
     className: "mb-3 mt-10 block text-xs  text-neutral-600"
-  }, "Password*"), /* @__PURE__ */ React20.createElement("div", {
+  }, "Password*"), /* @__PURE__ */ React16.createElement("div", {
     className: "relative w-full"
-  }, /* @__PURE__ */ React20.createElement("input", {
+  }, /* @__PURE__ */ React16.createElement("input", {
     type: "password",
     className: "focus:outlineSign w-full rounded-full border border-neutral-300 py-3 pl-6 pr-16 text-neutral-800 outline-neutral-800 placeholder:font-light placeholder:text-stone-400",
     placeholder: "Password",
     value: formData.password,
     onChange: (e) => setFormData({ ...formData, password: e.target.value })
-  }), /* @__PURE__ */ React20.createElement("button", {
+  }), /* @__PURE__ */ React16.createElement("button", {
     className: "absolute top-4 right-4 text-xs font-bold text-blue-700"
-  }, "show")), /* @__PURE__ */ React20.createElement("a", {
+  }, "show")), /* @__PURE__ */ React16.createElement("a", {
     href: "#",
     className: "mt-4 inline-block text-xs font-bold text-blue-700"
-  }, "Forget password?"), /* @__PURE__ */ React20.createElement("div", {
+  }, "Forget password?"), /* @__PURE__ */ React16.createElement("div", {
     className: "mt-10 flex items-center gap-8"
-  }, /* @__PURE__ */ React20.createElement(Button, {
+  }, /* @__PURE__ */ React16.createElement(Button, {
     type: "submit"
-  }, "Sign In"))), /* @__PURE__ */ React20.createElement("div", {
+  }, "Sign In"))), /* @__PURE__ */ React16.createElement("div", {
     className: ""
-  }, /* @__PURE__ */ React20.createElement("h1", {
+  }, /* @__PURE__ */ React16.createElement("h1", {
     className: "mt-10 mb-2 text-2xl font-black leading-7 text-neutral-600"
-  }, "Don\u2019t Have An Account?"), /* @__PURE__ */ React20.createElement("p", {
+  }, "Don\u2019t Have An Account?"), /* @__PURE__ */ React16.createElement("p", {
     className: "mb-10 text-base font-light leading-6 text-neutral-600"
-  }, "Create your account today to easily manage past and upcoming orders, subscriptions, and invoices."), /* @__PURE__ */ React20.createElement(Button, null, "Create Your Account")))));
+  }, "Create your account today to easily manage past and upcoming orders, subscriptions, and invoices."), /* @__PURE__ */ React16.createElement(Button, null, "Create Your Account")))));
 };
 Login.displayName = "Login";
 export {
